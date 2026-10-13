@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Tracker</title>
+    <link rel="icon" href="./images/logo 2.png">
+    <link rel="stylesheet" href="grade1.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/logo 2.png" alt="">
+            <div style="background-color: white;">
+                <h2 style="background-color: white;">Class<span style="background-color: white;">Tracker</span></h2>
+                <p style="background-color: white;">Class Attendance System</p>
+            </div>
+        </div>
+        <div class="teacher">
+            <img src="./images/account ic.png" alt="">
+            <span>Teacher</span>
+        </div>
+    </nav>
+    <main>
+        <a href="index.html" class="back">
+            <span class="back-arrow">⬅</span>
+            Back to Grades
+        </a>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="grade-number">
+                    1
+                </div>
+                <div class="hero-text">
+                    <h1>Grade 1</h1>
+                    <p>Select a Class below to take attendance.</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./images/hero-image2.png" alt="">
+            </div>
+        </section>
+        <section class="classes-container">
+            <div class="classes">
+                <div class="class-card">
+                    <div class="class-box-a">
+                        1A
+                    </div>
+                    <div class="class-info">
+                        <h2>Grade 1A</h2>
+                        <p>Select this class to take attendance.</p>
+                    </div>
+                    <button onclick="goToGrade1A()">
+                        ➡
+                    </button>
+                </div>
+                <div class="class-card">
+                    <div class="class-box-b">
+                        1B
+                    </div>
+                    <div class="class-info">
+                        <h2>Grade 1B</h2>
+                        <p>Select this class to take attendance.</p>
+                    </div>
+                    <button onclick="goToGrade1B()">
+                        ➡
+                    </button>
+                </div>
+                <div class="class-card">
+                    <div class="class-box-c">
+                        1C
+                    </div>
+                    <div class="class-info">
+                        <h2>Grade 1C</h2>
+                        <p>Select this class to take attendance.</p>
+                    </div>
+                    <button onclick="goToGrade1C()">
+                        ➡
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 ClassTracker. All rights reserved.</p>
+        <span></span>
+        <p>Better Attendance. Brighter Future</p>
+    </footer>
+
+
+    <script>
+        function goToGrade1A(){
+            window.location.href ="grade1A.html"
+        }
+        function goToGrade1B(){
+            window.location.href ="grade1B.html"
+        }
+        function goToGrade1C(){
+            window.location.href ="grade1C.html"
+        }
+    </script>
+</body>
+</html>

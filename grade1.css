@@ -1,0 +1,326 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6faff;
+}
+.navbar{
+    height: 80px;
+    background-color: white;
+    border-bottom: 1px solid #dce8f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: white;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.logo h2{
+    color: #174f91;
+}
+.logo h2 span{
+    color: #087ff3;
+}
+.logo p{
+    font-size: 13px;
+    margin-top: 4px;
+    color: #174f91;
+}
+.teacher{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: white;
+}
+.teacher span{
+    font-weight: bold;
+    font-size: 17px;
+    background-color: white;
+}
+.teacher img{
+    width: 35px;
+    height: auto;
+}
+main{
+    width: 94%;
+    margin: 25px auto;
+}
+.back{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #087ff3;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px 0 15px 35px;
+}
+.back:hover{
+    color: #075bb1;
+}
+.back-arrow{
+    font-size: 28px;
+}
+.hero{
+    border-radius: 12px;
+    background-color: #EDF6FE;
+    padding: 30px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow: hidden; */
+    position: relative;
+}
+.hero-content{
+    background-color: #EDF6FE;
+}
+.grade-number{
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(135deg, #1595ff, #0873e6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+.hero-text h1{
+    font-size: 55px;
+    color: #073575;
+    margin-bottom: 5px;
+    background-color: #EDF6FE;
+}
+.hero-text p{
+    color: #6482ad;
+    background-color: #EDF6FE;
+    font-size: 23px;
+}
+.hero-image img{
+    width: 100%;
+}
+.hero-image{
+    width: 50%;
+}
+.classes-container{
+    margin-top: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(40, 100, 160, 0.08);
+}
+.classes{
+    display: grid;
+    gap: 28px;
+    grid-template-columns: 1fr 1fr;
+}
+.class-card{
+    border: 1px solid #dce8f4;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    transition: 0.3s ease;
+}
+.class-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 100, 200, 0.1);
+}
+.class-box-a{
+    width: 110px;
+    height: 105px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 37px;
+    font-weight: bold;
+    margin-right: 38px;
+    background-color: #e2efff;
+    color: #0964bd;
+}
+.class-box-b{
+    width: 110px;
+    height: 105px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 37px;
+    font-weight: bold;
+    margin-right: 38px;
+    background-color: #dcf8e8;
+    color: #07984a;
+}
+.class-box-c{
+    width: 110px;
+    height: 105px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 37px;
+    font-weight: bold;
+    margin-right: 38px;
+    background-color: #eee1ff;
+    color: #6020c8;
+}
+.class-info{
+    flex: 1;
+    background-color: white;
+}
+.class-info h2{
+    font-size: 30px;
+    color: #073575;
+    margin-bottom: 14px;
+    background-color: white;
+}
+.class-info p{
+    font-size: 18px;
+    color: #708bb0;
+    background-color: white;
+}
+.class-card button{
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: #eaf5ff;
+    color: #087ff3;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.class-card button:hover{
+    background-color: #087ff3;
+    color: white;
+}
+footer{
+    margin-top: 30px;
+    padding: 25px 0;
+    border-top: 1px solid #d7e3ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: #6281a7;
+    font-size: 13px;
+}
+footer p{
+    margin: 0;
+}
+footer span{
+    width: 1px;
+    height: 18px;
+    background: #b8c8da;
+}
+@media (min-width: 0px) and (max-width: 450px) {
+    .navbar{
+        height: 70px;
+        padding: 9px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 150px;
+        height: 100%;
+    }
+    .logo img{
+        width: 70px;
+        height: 100%;
+    }
+    .logo h2{
+        font-size: 20px;
+    }
+    .logo p{
+        font-size: 10px;
+    }
+    .teacher img{
+        width: 30px ;
+    }
+    .teacher span{
+        font-size: 12px;
+    }
+    main{
+        width: 94%;
+        margin: 15px;
+    }
+
+    .back{
+        margin-left: 5px;
+        font-size: 15px;
+    }
+    .hero{
+        min-height: 170px;
+        padding: 20px;
+    }
+    .hero-content{
+        gap: 15px;
+    }
+    .grade-number{
+        width: 70px;
+        height: 70px;
+        font-size: 38px;
+    }
+    .hero-text h1{
+        font-size: 30px;
+    }
+    .hero-text p{
+        font-size: 16px;
+        line-height: 1.4
+    }
+    .hero-image{
+        display: none;
+    }
+    .classes-container{
+        padding: 15px;
+    }
+    .classes{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .class-card{
+        min-height: 125px;
+        padding: 10px;
+    }
+    .class-box-a,.class-box-b,.class-box-c{
+        width: 65px;
+        height: 65px;
+        border-radius: 15px;
+        font-size: 22px;
+        margin-right: 15px;
+    }
+    .class-info h2{
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    .class-info p{
+        font-size: 15px;
+    }
+    .class-card button{
+        width: 40px;
+        height: 40px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    footer span{
+        display: none;
+    }
+}

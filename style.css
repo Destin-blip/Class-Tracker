@@ -1,0 +1,311 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6faff;
+    color: #062d68;
+}
+.navbar{
+    height: 80px;
+    background-color: white;
+    border-bottom: 1px solid #dce8f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: white;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.logo h2{
+    color: #174f91;
+}
+.logo h2 span{
+    color: #087ff3;
+}
+.logo p{
+    font-size: 13px;
+    margin-top: 4px;
+    color: #174f91;
+}
+.teacher{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: white;
+}
+.teacher span{
+    font-weight: bold;
+    font-size: 17px;
+    background-color: white;
+}
+.teacher img{
+    width: 35px;
+    height: auto;
+}
+.hero{
+    width: 100%;
+    min-height: 330px;
+    padding: 30px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E8F5FE;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.hero-text{
+    flex: 1;
+    background-color: #E8F5FE;
+}
+.hero-text h1{
+    font-size: 45px;
+    line-height: 1.05;
+    margin: 0;
+    background-color: #E8F5FE;
+    color: #062d67;
+    font-weight: 700;
+}
+.class-text{
+    color: #062d67;
+    background-color: #E8F5FE;
+}
+.tracker-text{
+    color: #087ff3;
+    background-color: #E8F5FE;
+}
+.hero-text h3{
+    margin-top: 18px;
+    font-size: 24px;
+    background-color: #E8F5FE;
+    color: #3e6595;
+    font-weight: 600;
+}
+.hero-text p{
+    background-color: #E8F5FE;
+    margin-top: 18px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #5879a2;
+}
+.hero-image{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-image img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.grades-selection{
+    width: 100%;
+    margin-top: 22px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #dceaf7;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 50, 100, 0.04);
+}
+.section-title{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 25px;
+}
+.section-title img{
+    width: 4%;
+}
+.section-title h2{
+    margin: 0;
+    font-size: 28px;
+    color: #062d68;
+}
+.grades-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    row-gap: 10px;
+}
+.grade-card{
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dce9f6;
+    border-radius: 13px;
+    transition: 0.3s ease;
+}
+.grade-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 90, 170, 0.12);
+}
+.grade-number-1{
+    width: 20%;
+    background-color: #299af2;
+    height: 90%;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+}
+.grade-info{
+    flex: 1;
+    margin-left: 25px;
+    background-color: white;
+}
+.grade-info h3{
+    margin: 0 0 12px;
+    background-color: white;
+    font-size: 22px;
+    color: #062d68;
+}
+.grade-info p{
+    display: flex;
+    background-color: white;
+    margin: 0;
+    align-items: center;
+    font-size: 16px;
+    color: #087ff3;
+}
+.grade-info p img{
+    margin-right: 8px;
+    width: 20%;
+    height: auto;
+}
+.grade-card button{
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: #eaf5ff;
+    color: #087ff3;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.grade-card button:hover{
+    background-color: #087ff3;
+    color: white;
+}
+footer{
+    margin-top: 30px;
+    padding: 25px 0;
+    border-top: 1px solid #d7e3ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: #6281a7;
+    font-size: 13px;
+}
+footer p{
+    margin: 0;
+}
+footer span{
+    width: 1px;
+    height: 18px;
+    background: #b8c8da;
+}
+@media (min-width: 0px) and (max-width: 450px) {
+    .navbar{
+        height: 70px;
+        padding: 9px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 150px;
+        height: 100%;
+    }
+    .logo img{
+        width: 70px;
+        height: 100%;
+    }
+    .logo h2{
+        font-size: 20px;
+    }
+    .logo p{
+        font-size: 10px;
+    }
+    .teacher img{
+        width: 30px ;
+    }
+    .teacher span{
+        font-size: 12px;
+    }
+    .hero{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .class-text, .tracker-text{
+        font-size: 38px;
+    }
+    .hero-text h1{
+        font-size: 23px;
+        line-height: 1.1;
+    }
+    .hero-text h3{
+        margin-top: 5px;
+        font-size: 23px;
+    }
+    .hero-text p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .hero-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        background-color: #E8F5FE;
+    }
+    .hero-image img{
+        width: 85%;
+    }
+    .grades-selection{
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+    .section-title{
+        gap: 12px;
+    }
+    .section-title img{
+        width: 45px;
+    }
+    .section-title h2{
+        font-size: 23px;
+    }
+    .grades-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    footer span{
+        display: none;
+    }
+}

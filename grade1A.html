@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassTracker</title>
+    <link rel="icon" href="./images/logo 2.png">
+    <link rel="stylesheet" href="grade1A.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/logo 2.png" alt="">
+            <div style="background-color: white;">
+                <h2 style="background-color: white;">Class<span style="background-color: white;">Tracker</span></h2>
+                <p style="background-color: white;">Class Attendance System</p>
+            </div>
+        </div>
+        <div class="teacher">
+            <img src="./images/account ic.png" alt="">
+            <span>Teacher</span>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="attendance-hero">
+            <a href="grade1.html" class="back">
+                <span class="back-arrow">⬅</span>
+                Back to Grades
+            </a>
+            <div class="hero-content">
+                <div class="class-circle">
+                    1A
+                </div>
+                <div class="hero-text">
+                    <h1>Grade 1A</h1>
+                    <p>Take attendance for you students.</p>
+                </div>
+                <div class="filters">
+                    <div class="filter-box">
+                        <img src="./images/calender-icon.png" alt="">
+                        <div style="background-color: white;">
+                            <small>Date</small>
+                            <input type="" id="attendanceDate">
+                        </div>
+                    </div>
+                    <div class="filter-box term-box">
+                        <img style="width: 75px;" src="./images/book icon.png" alt="">
+                        <div style="background-color: white;">
+                            <small>Term</small>
+                            <select id="term">
+                                <option>First Term</option>
+                                <option>Second Term</option>
+                                <option>Third Term</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="attendance-section">
+            <div class="attendance-header">
+                <div style="display: flex; align-items: center; background-color: transparent;">
+                    <img src="./images/ppl.png" alt="">
+                    <h2>Student Attendance</h2>
+                </div>
+                <button class="add-student" id="addStudentBtn">+ Add New Student</button>
+            </div>
+            <div class="table container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Student Name</th>
+                            <th>Present</th>
+                            <th>Absent</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentList">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="bottom-section">
+                <div class="information">
+                    ⨀ Make sure to mark attendance for all students before saving.
+                </div>
+                <button class="save-btn" id="saveAttendance">Save Attendance</button>
+            </div>
+        </section>
+    </main>
+    <div class="modal" id="studentModal">
+        <div class="modal-context">
+            <button class="close-btn" id="closeModal">
+                x
+            </button>
+            <h2>Add New Student</h2>
+            <p>Add the Student's information below.</p>
+            <label>Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter student name">
+
+            <label>Admission Number</label>
+            <input type="text" id="admissionNumber" placeholder="e.g .G1A009">
+            <button class="modal-add" id="confirmAddStudent">Add Student</button>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
