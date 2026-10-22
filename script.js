@@ -143,4 +143,134 @@ closeModal.addEventListener(
             );
         }
     );
+    saveAttendance.addEventListener(
+    "click",
+    function () {
+
+        const date =
+            document.getElementById(
+                "attendanceDate"
+            ).value;
+
+        const term =
+            document.getElementById(
+                "term"
+            ).value;
+
+
+        if (date === "") {
+
+            alert(
+                "Please select the attendance date."
+            );
+
+            return;
+        }
+
+
+        const attendance = [];
+
+
+        students.forEach(student => {
+
+            const present =
+                document.querySelector(
+                    `[data-student="${student.admission}"][data-status="Present"]`
+                );
+
+            const absent =
+                document.querySelector(
+                    `[data-student="${student.admission}"][data-status="Absent"]`
+                );
+
+
+            let status = "";
+
+            if (present && present.checked) {
+                status = "Present";
+            }
+
+            if (absent && absent.checked) {
+                status = "Absent";
+            }
+
+
+            attendance.push({
+
+                studentName: student.name,
+
+                admissionNumber:
+                    student.admission,
+
+                status: status
+
+            });
+
+        });
+
+
+        // Check if everyone has been marked
+
+        const unmarked =
+            attendance.filter(
+                student => student.status === ""
+            );
+
+
+        if (unmarked.length > 0) {
+
+            alert(
+                "Please mark Present or Absent for every student."
+            );
+
+            return;
+        }
+
+
+        // Attendance record
+
+        const attendanceRecord = {
+
+            class: "Grade 1A",
+
+            date: date,
+
+            term: term,
+
+            attendance: attendance
+
+        };
+
+
+        // Get previous records
+
+        let savedAttendance =
+            JSON.parse(
+                localStorage.getItem(
+                    "attendanceRecords"
+                )
+            ) || [];
+
+
+        // Add new record
+
+        savedAttendance.push(
+            attendanceRecord
+        );
+
+
+        // Save to Local Storage
+
+        localStorage.setItem(
+            "attendanceRecords",
+            JSON.stringify(savedAttendance)
+        );
+
+
+        alert(
+            "Attendance saved successfully!"
+        );
+
+    }
+);
 displayStudents();
